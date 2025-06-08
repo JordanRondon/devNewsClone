@@ -14,7 +14,7 @@ export default async function Home() {
   return (
     <div className="w-full max-w-4xl mx-auto px-4 pt-8 ">
       <h1 className="text-3xl font-bold mb-2">Latest Articles</h1>
-      <span className="text-gray-600">Are you a developer? Discover the latest in web development</span>
+      <p className="text-gray-600 mb-10">Are you a developer? Discover the latest in web development</p>
       <div className="flex flex-wrap gap-6">
         {articles.map((article, index) => (
           <ArticleCard article={article} key={index}/>
