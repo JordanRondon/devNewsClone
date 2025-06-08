@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
+
 export default function articleCard ( { article } ) {
 
     const date = new Date("2025-06-06T12:12:03Z");
@@ -45,7 +46,7 @@ export default function articleCard ( { article } ) {
                     ))}
                 </div>
                 <Link href={`/article/${article.id}`} className="border border-gray-300 bg-white text-black px-4 py-1 rounded-md hover:bg-gray-100 transition-colors">
-                    <button>send</button>
+                    <button>Read</button>
                 </Link>
             </div>
         </div>
