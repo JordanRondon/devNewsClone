@@ -11,15 +11,13 @@ export default async function Home() {
 
   const articles = await loadArticles();
 
-  return (
-    <div className="w-full max-w-4xl mx-auto px-4 pt-8 ">
+  return (<>
       <h1 className="text-3xl font-bold mb-2">Latest Articles</h1>
       <p className="text-gray-600 mb-10">Are you a developer? Discover the latest in web development</p>
       <div className="flex flex-wrap gap-6">
         {articles.map((article, index) => (
-          <ArticleCard article={article} key={index}/>
+            <ArticleCard article={article} key={index}/>
         ))}
       </div>
-    </div>
-  );
+    </>);
 }
