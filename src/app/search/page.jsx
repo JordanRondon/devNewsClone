@@ -5,7 +5,7 @@ import { useChat } from 'ai/react'
 
 export default function searchPage () {
     const { messages, input, handleInputChange, handleSubmit } = useChat({
-        api: "/api/chatv2",
+        api: "/api/chat",
     })
     return (<>
         <h1 className="text-3xl font-bold mb-2 flex items-center gap-2">
@@ -22,10 +22,7 @@ export default function searchPage () {
                     return (
                     <MessageLine
                         key={index}
-                        message={{
-                        user: message.role === 'user',
-                        text: message.content,
-                        }}
+                        message={message}
                     />
                     )
                 })

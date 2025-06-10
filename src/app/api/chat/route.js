@@ -27,7 +27,7 @@ export async function POST(req) {
   //console.log("📨 Mensajes recibidos:", messages);
   console.dir(messages, {depth: null});
   const result = streamText({
-    model: openai("gpt-4o-mini"),
+    model: openai("gpt-4.1-nano"),
     system: "You are a helpful assistant who recommends Dev.to articles.",
     messages,
     tools: {search: devToTool},
