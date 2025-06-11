@@ -32,7 +32,6 @@ export async function POST(req) {
     messages,
     tools: {search: devToTool},
   });
-  console.log("🧠 Resultado generado:", result);
 
   return result.toDataStreamResponse();
 }
