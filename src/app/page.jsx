@@ -9,7 +9,7 @@ async function loadArticles(page = 1) {
 
 export default async function Home({ searchParams }) {
   const params = await searchParams;
-  const currentPage = Number(params) || 1;
+  const currentPage = Number(params.page) || 1;
   const articles = await loadArticles(currentPage);
 
   return (
