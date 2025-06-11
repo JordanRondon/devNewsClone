@@ -55,18 +55,24 @@ OPENAI_API_KEY=your_openai_key
 
 ```
 |-/app
-|  |-/api/chat/route.js       # Endpoint for searches with OpenAI
-|  |-/article/[id]/page.jsx   # Article Details
-|  |-/search/page.jsx         # Page to chat with the AI
-|  |-/layour.jsx
-|  |-page.jsx                 # Home page with articles
-|/components
-|  ArticleCard.jsx
-|  MessageContent.jsx
-|  MessageLine.jsx
-|  Navbar.jsx
-|  Pagination.jsx
-|  SearchResult.jsx
+   |-/api/chat/route.js   # Endpoint for searches with OpenAI
+   |-/article
+   |  |-/[id]
+   |     |-loading.jsx
+   |     |-page.jsx       # Article Details
+   |-/search/page.jsx     # Page to chat with the AI
+   |-error.jsx
+   |-layour.jsx
+   |-loading.jsx
+   |-not-found.jsx
+   |-page.jsx             # Home page with articles
+|-/components
+   |-ArticleCard.jsx
+   |-MessageContent.jsx
+   |-MessageLine.jsx
+   |-Navbar.jsx
+   |-Pagination.jsx
+   |-SearchResult.jsx
 ```
 
 ## 💬 ChatBot Functionality
